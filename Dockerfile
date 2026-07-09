@@ -20,7 +20,7 @@ RUN playwright install chromium
 RUN playwright install-deps chromium
 
 # ចម្លងកូដ Bot ទាំងស្រុងចូលទៅក្នុង Container
-COPY bot.py .
+COPY bot.py keep_alive.py .
 
 # បញ្ជាឲ្យដំណើរការកូដ
 CMD ["python", "bot.py"]
