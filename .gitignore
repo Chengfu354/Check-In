@@ -8,3 +8,4 @@ venv/
 # Playwright generated files
 *.html
 *.txt
+!requirements.txt
