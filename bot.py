@@ -86,6 +86,9 @@ async def check_out(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text(result)
 
 if __name__ == '__main__':
+    from keep_alive import keep_alive
+    keep_alive()
+    
     if not TOKEN or TOKEN == 'your_token_here':
         logger.error("Please set TELEGRAM_BOT_TOKEN in your .env file.")
         exit(1)
